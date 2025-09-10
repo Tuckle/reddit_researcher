@@ -1,0 +1,25 @@
+psaw
+praw
+psycopg2-binary
+numpy
+scikit-learn
+sentence-transformers
+streamlit
+apscheduler
+easyocr
+PyQt5 # EasyOCR dependency
+openai
+hdbscan
+requests
+pandas
+pyyaml
+selenium
+pyperclip
+pytz
+psutil
+gspread
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+python-dotenv
+google-generativeai 

@@ -1,0 +1,69 @@
+# Environment Variables Template for Reddit Researcher
+# =====================================================
+# Copy this file to .env and fill in your actual values
+# DO NOT commit the .env file to version control
+
+# ============================================================================
+# Database Configuration
+# ============================================================================
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_secure_database_password
+DB_HOST=your-database-host.com
+DB_PORT=5432
+
+# ============================================================================
+# API Keys and Credentials
+# ============================================================================
+
+# Gemini AI API Key (get from Google AI Studio)
+GEMINI_API_KEY=AIzaSyABCDEF1234567890-your_actual_gemini_key
+
+# Reddit API Credentials (get from https://www.reddit.com/prefs/apps)
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USER_AGENT=your_app_name:v1.0 (by /u/YourUsername)
+
+# ============================================================================
+# Email Configuration
+# ============================================================================
+EMAIL_SMTP_SERVER=smtp.gmail.com
+EMAIL_SMTP_PORT=587
+EMAIL_SENDER=your_email@gmail.com
+EMAIL_PASSWORD=your_gmail_app_password
+EMAIL_RECIPIENTS=recipient1@email.com,recipient2@email.com
+
+# ============================================================================
+# Google Sheets Integration
+# ============================================================================
+GOOGLE_SPREADSHEET_NAME=Your_Spreadsheet_Name
+GOOGLE_WORKSHEET_NAME=Main
+
+# Google Service Account Credentials (alternative to google_credentials.json file)
+GOOGLE_SERVICE_ACCOUNT_TYPE=service_account
+GOOGLE_SERVICE_ACCOUNT_PROJECT_ID=your_project_id
+GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY_ID=your_private_key_id_goes_here
+GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\nYOUR_ACTUAL_PRIVATE_KEY_CONTENT_GOES_HERE\n-----END PRIVATE KEY-----\n
+GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL=your-service-account@your-project.iam.gserviceaccount.com
+GOOGLE_SERVICE_ACCOUNT_CLIENT_ID=your_client_id_number
+GOOGLE_SERVICE_ACCOUNT_AUTH_URI=https://accounts.google.com/o/oauth2/auth
+GOOGLE_SERVICE_ACCOUNT_TOKEN_URI=https://oauth2.googleapis.com/token
+GOOGLE_SERVICE_ACCOUNT_AUTH_PROVIDER_X509_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+GOOGLE_SERVICE_ACCOUNT_CLIENT_X509_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/your-service-account%40your-project.iam.gserviceaccount.com
+GOOGLE_SERVICE_ACCOUNT_UNIVERSE_DOMAIN=googleapis.com
+
+# ============================================================================
+# Application Configuration (Optional - has defaults)
+# ============================================================================
+
+# Subreddits to monitor (comma-separated, customize for your use case)
+SUBREDDITS=dating,relationships,relationshipadvice,socialskills,OnlineDating
+
+# Processing Configuration
+GEMINI_BATCH_SIZE=25
+GEMINI_MODEL=gemini-1.5-flash
+MAX_DURATION_HOURS=4
+MAX_RETRIES=3
+PARALLEL_WORKERS=3
+CACHE_TTL=300
+STATS_CACHE_TTL=60 
